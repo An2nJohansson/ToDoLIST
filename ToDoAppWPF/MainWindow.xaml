@@ -17,6 +17,9 @@
         <ListBox Name="TasksListBox" HorizontalAlignment="Left" Height="200" Margin="10,50,0,0"
         VerticalAlignment="Top" Width="480" SelectionChanged="TasksListBox_SelectionChanged"/>
 
-        <Button Name="RemoveButton" Content="Ta bort uppgift" HorizontalAlignment="Left"                 VerticalAlignment="Top" Width="94" Height="30" Margin="401,260,0,0"                 Click="RemoveButton_Click"/>
+        <Button Name="RemoveButton" Content="Ta bort uppgift" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Width="94" Height="30" Margin="401,260,0,0" 
+                Click="RemoveButton_Click"/>
+
     </Grid>
 </Window>
