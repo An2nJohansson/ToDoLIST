@@ -20,6 +20,7 @@ namespace ToDoAppWPF
             tasks.Add(task);
         }
 
+        //metod för att ta bort en task ur listan
         public void RemoveTask(int index) 
         {
             if (index >= 0 && index < tasks.Count)
@@ -29,6 +30,7 @@ namespace ToDoAppWPF
             
         }
 
+        //visa hela listan med tasks
         public List<string> GetAllTasks() 
         {
             return tasks;

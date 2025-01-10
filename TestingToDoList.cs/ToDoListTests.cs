@@ -5,12 +5,14 @@ namespace TestingToDoList
 {
     public class ToDoListTests
     {
+        
         private ToDoClass _todoList;
         public ToDoListTests() 
         {
             _todoList = new ToDoClass();
         }
 
+        // test för att lägga till en task
         [Fact]
         public void AddTask_ShouldAddTaskToList()
         {
@@ -20,6 +22,8 @@ namespace TestingToDoList
             Assert.Contains(task, tasks);
         }
 
+        
+        //test för att ta bort en task
         [Fact]
         public void RemoveTask_ShouldRemoveTaskToList() 
         {

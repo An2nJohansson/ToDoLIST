@@ -8,8 +8,6 @@ namespace ToDoAppWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        
-        //
         private ToDoClass _todoList;
         public MainWindow()
         {
@@ -17,8 +15,11 @@ namespace ToDoAppWPF
             _todoList = new ToDoClass();
         }
 
-        
-        // tar bort en to do task ur listan
+        /// <summary>
+        /// tar bort en to do task ur listan
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
             if (TasksListBox.SelectedIndex >= 0)
@@ -26,9 +27,17 @@ namespace ToDoAppWPF
                 _todoList.RemoveTask(TasksListBox.SelectedIndex);
                 UpdateTaskList();
             }
+            else 
+            {
+                MessageBox.Show("Var vänlig välj en inlagd uppgift för att kunna ta bort :)");
+            }
         }
-
-        // lägger till en to do task i listan
+        
+        /// <summary>
+        /// lägger till en to do task i listan
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             string task = TaskTextBox.Text;
@@ -38,9 +47,17 @@ namespace ToDoAppWPF
                 UpdateTaskList();
                 TaskTextBox.Clear();
             }
+
+            //ifall användare försöker lägga till en blank rad
+            else
+            {
+                MessageBox.Show("Var vänlig skapa en uppgift för att lägga till i listan :)");
+            }
         }
 
-        //uppdaterar listan med to do tasks
+        /// <summary>
+        /// uppdaterar listan med to do tasks
+        /// </summary>
         private void UpdateTaskList()
         {
             TasksListBox.Items.Clear();
