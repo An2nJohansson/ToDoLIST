@@ -8,14 +8,14 @@
         Title="To-Do App" Height="350" Width="525">
     <Grid>
         <TextBox Name="TaskTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" 
-                 VerticalAlignment="Top" Width="380" Height="30" TextChanged="TaskTextBox_TextChanged"/>
+                 VerticalAlignment="Top" Width="380" Height="30"/>
 
         <Button Name="AddButton" Content="Lägg till uppgift" HorizontalAlignment="Left" 
                 VerticalAlignment="Top" Width="94" Height="30" Margin="401,10,0,0" 
                 Click="AddButton_Click"/>
 
         <ListBox Name="TasksListBox" HorizontalAlignment="Left" Height="200" Margin="10,50,0,0"
-        VerticalAlignment="Top" Width="480" SelectionChanged="TasksListBox_SelectionChanged"/>
+        VerticalAlignment="Top" Width="480"/>
 
         <Button Name="RemoveButton" Content="Ta bort uppgift" HorizontalAlignment="Left" 
                 VerticalAlignment="Top" Width="94" Height="30" Margin="401,260,0,0" 
