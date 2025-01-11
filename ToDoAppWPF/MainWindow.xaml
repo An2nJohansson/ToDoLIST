@@ -28,6 +28,8 @@
                 VerticalAlignment="Top" Width="104" Height="30" Margin="386,269,0,0" 
                 Click="RemoveButton_Click" Background="#336699" Foreground="white" FontSize="12" FontWeight="Bold"
                 />
+       
+        <Image Name="PlanAct" Margin="69,259,204,10" Source="/businessman-2521703_640.jpg" Stretch="Fill"/>
 
     </Grid>
 </Window>
